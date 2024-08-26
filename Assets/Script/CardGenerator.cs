@@ -10,13 +10,10 @@ public class CardGenerator : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 18; i++)
         {
             Card._id = Random.Range(0, 3);
-            for (int j = 0; j < 2; j++)
-            {
-                Card card = Instantiate<Card>(this._cardPrefab, this._cardGenrateParent);
-            }
+            Card card = Instantiate<Card>(this._cardPrefab, this._cardGenrateParent);
         }
     }
 }
